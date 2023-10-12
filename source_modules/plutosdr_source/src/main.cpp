@@ -43,7 +43,7 @@ public:
         // Generate the samplerate list and find srId
         bool found = false;
         int id = 0;
-        for (double sr = 1000000; sr <= 20000000; sr += 500000) {
+        for (double sr = 1000000; sr <= 60000000; sr += 500000) {
             sampleRates.push_back(sr);
             sampleRatesTxt += getBandwdithScaled(sr);
             sampleRatesTxt += '\0';
